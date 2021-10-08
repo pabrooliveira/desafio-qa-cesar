@@ -1,0 +1,11 @@
+default: -p qa -p chrome -p html_report
+
+#Environments
+qa: ENVIRONMENT=qa
+
+#Browsers
+chrome: BROWSER=chrome
+chromeheadless: BROWSER=chromeheadless
+
+#Reports
+html_report: --format pretty --format html --out=reports/report.html
